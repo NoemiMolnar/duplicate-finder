@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """
-Gets the files' content in a specific directory.
+this module gets the files' content in a specific directory.
 """
 
 def get_file_content(path):
@@ -11,3 +11,7 @@ def get_file_content(path):
     Returns:
         string: The content of the file, which the path belongs to.
     """
+
+    with file(path) as file_to_read:
+        content = file_to_read.read()
+        return content
