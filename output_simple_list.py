@@ -16,4 +16,4 @@ def output_simple_list(duplicate_file_list, file1, file2):
     duplicate_file_list.append(file2)
     if file1 not in duplicate_file_list:
         duplicate_file_list.append(file1)
-        
+    return duplicate_file_list

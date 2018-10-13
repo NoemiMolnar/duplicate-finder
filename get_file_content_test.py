@@ -22,4 +22,3 @@ class TestCompareFiles(unittest.TestCase):
         test_file_content = get_file_content(test_file)
         self.assertEqual('This is test', test_file_content)
         os.remove(test_file)
-
